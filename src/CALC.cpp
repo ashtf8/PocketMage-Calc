@@ -21,7 +21,7 @@ static volatile bool doFull = false;
 // to-do 
 // depreciate ~C~ and ~R~ for flags included in LineView 
 // - flags bitmask 0000 0000
-//  LF_NONE=0000 0000
+//  LF_NONE= 0000 0000
 //  LF_RIGHT= 0000 0001
 //  LF_CENTER= 0000 00010
 //  other flags to be determined 
@@ -1155,7 +1155,7 @@ void CALC_INIT() {
   lastTouch = -1;
   newState = true;
   doFull = true;
-  disableTimeout = false;
+  disableTimeout = true;
   EINK().setTXTFont(&FreeMonoBold9pt7b);
   currentLine = "";
 }
